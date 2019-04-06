@@ -1,0 +1,22 @@
+<div>
+
+
+<ng-select [items]="cities2"
+bindLabel="name"
+bindValue="id"
+[multiple]="true"
+placeholder="Select cities"
+[formControlName]="control">
+
+
+
+  
+
+</ng-select>
+
+
+<mat-error *ngIf="ParentformGroup.controls[control].hasError('required')">
+Trade is <strong>required</strong>
+</mat-error>
+
+</div>
