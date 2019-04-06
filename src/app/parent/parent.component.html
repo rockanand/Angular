@@ -1,0 +1,11 @@
+<form [formGroup]="parentFormGrp">
+  <input type="text" formControlName="Name"> <br> <br>
+  <input type="text" formControlName="Age">
+  <app-child [ParentformGroup]="parentFormGrp" control="Trade"></app-child>
+  <app-child [ParentformGroup]="parentFormGrp" control="Trade1"></app-child>
+  <app-child [ParentformGroup]="parentFormGrp" control="Trade2"></app-child>
+
+</form>
+
+
+<input type="button" (click)="test()" value="Details" />
